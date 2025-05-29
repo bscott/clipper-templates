@@ -1,0 +1,33 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Claude Clean",
+	"behavior": "create",
+	"noteContentFormat": "# {{title}}\n\n## Raw Conversation Content\n\n```\n{{content|replace:(\"\\\\\\*\": \"*\", \"\\\\\\`\": \"`\")}}\n```\n\n---\n**Source:** {{url}}  \n**Captured:** {{date}}\n**Model:** Claude (Anthropic)\n",
+	"properties": [
+		{
+			"name": "title",
+			"value": "{{title}}",
+			"type": "text"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "model",
+			"value": "Claude",
+			"type": "text"
+		},
+		{
+			"name": "tags",
+			"value": "claude, conversation, ai-chat",
+			"type": "multitext"
+		}
+	],
+	"triggers": [
+		"https://claude.ai/chat/"
+	],
+	"noteNameFormat": "Claude - {{title}}",
+	"path": "AI Conversations/Claude"
+}

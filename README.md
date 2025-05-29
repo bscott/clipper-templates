@@ -6,7 +6,7 @@ To install templates, see instructions in the official [Obsidian Web Clipper doc
 
 Specific Websites
 
-- [Claude AI](/templates/claude-clean-clipper.json)
+- [Claude AI](/templates/claudeai-clipper.json)
 
 
 Inspiration from [Kepano's Clipper Templates](https://github.com/kepano/clipper-templates)
